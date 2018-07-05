@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ass.mapper.CustomerMapper">
+	<insert id="saveCustomer" parameterType="com.ass.domin.customer">
+	insert into customer
+	(
+		 name,
+		 address,
+		 pNumber,
+		 ID,
+		 password,
+		 birth,
+		 sex,
+		 type
+	)
+	values
+	(
+	#{name},
+	#{address},
+	#{pNumber},
+	#{ID},
+	#{password},
+	#{birth},
+	#{sex},
+	#{type}
+	)
+	</insert>
+</mapper>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ass.mapper.DormitoryMapper">
+	<insert id="save" parameterType="com.ass.domin.Dormitory">
+	insert into dormitory
+	(
+	type,
+	address,
+	pNumber,
+	price,
+	ownerID,
+	WhetherToRent
+	)
+	values
+	(
+	#{type},
+	#{address},
+	#{pNumber},
+	#{price},
+	#{ownerID},
+	#{WhetherToRent}
+	)
+	</insert>
+</mapper>
